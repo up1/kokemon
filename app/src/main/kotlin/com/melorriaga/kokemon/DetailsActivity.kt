@@ -8,25 +8,21 @@ import org.jetbrains.anko.*
  * Created by melorriaga on 9/3/17.
  */
 
-class MainActivity : AppCompatActivity() {
+class DetailsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        MainActivityUI().setContentView(this)
+        DetailsActivityUI().setContentView(this)
     }
 
 }
 
-class MainActivityUI: AnkoComponent<MainActivity> {
+class DetailsActivityUI: AnkoComponent<DetailsActivity> {
 
-    override fun createView(ui: AnkoContext<MainActivity>) = ui.apply {
+    override fun createView(ui: AnkoContext<DetailsActivity>) = ui.apply {
         verticalLayout {
             padding = dip(16)
-            button("Go to next screen") {
-                onClick {
-                    startActivity<DetailsActivity>()
-                }
-            }
+            textView(R.string.app_name)
         }
     }.view
 

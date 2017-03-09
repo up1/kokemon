@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 25
@@ -47,6 +46,14 @@ dependencies {
 
     // Kotlin Standard Library
     compile "org.jetbrains.kotlin:kotlin-stdlib:1.1.0"
+
+    // Anko
+    compile "org.jetbrains.anko:anko-sdk15:+"
+    compile "org.jetbrains.anko:anko-appcompat-v7:+"
+    compile "org.jetbrains.anko:anko-design:+"
+    compile "org.jetbrains.anko:anko-cardview-v7:+"
+    compile "org.jetbrains.anko:anko-recyclerview-v7:+"
+    compile "org.jetbrains.anko:anko-support-v4:+"
 
     // Dagger 2
     compile 'com.google.dagger:dagger:2.9'
