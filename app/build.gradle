@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 25
@@ -32,6 +33,9 @@ android {
             force 'com.android.support:support-annotations:25.2.0'
             force 'com.squareup.okhttp3:okhttp:3.6.0'
         }
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 
