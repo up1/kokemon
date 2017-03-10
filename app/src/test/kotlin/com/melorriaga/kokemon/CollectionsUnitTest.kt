@@ -4,9 +4,6 @@ import org.junit.Test
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
-/**
- * Created by melorriaga on 9/3/17.
- */
 class CollectionsUnitTest {
 
     @Test

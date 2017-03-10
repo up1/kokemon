@@ -1,12 +1,9 @@
-package com.melorriaga.kokemon
+package com.melorriaga.kokemon.view
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.melorriaga.kokemon.R
 import org.jetbrains.anko.*
-
-/**
- * Created by melorriaga on 9/3/17.
- */
 
 class DetailsActivity : AppCompatActivity() {
 
